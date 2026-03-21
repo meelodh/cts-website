@@ -14,8 +14,8 @@ function ExecBoard() {
       year: "Class of 2027",
       email: "",
       image: "/parsa.jpg",
-      bio: " | Incoming SI&T Intern @ Qualcomm | \n | Robotics @ Team Inspiration | \n Computer Science @ SDSU "
-    },
+      bio: "| Incoming SI&T Intern @ Qualcomm |\n| Robotics @ Team Inspiration |\n| Computer Science @ SDSU | "
+    }, 
     {
       name: "Pleiades Leonis",
       role: "Co-Founder & Co-President",
