@@ -6,8 +6,8 @@ function ExecBoard() {
       year: "Class of 2027",
       email: "mhassan2075@sdsu.edu",
       image: "/meelodd.jpg",
-      bio: "| Advanced to final round (onsite) interviews for Software Engineering Intern @ Amazon & AT&T |\n| Developing software projects in Java, Python, C++, and web technologies for over half a decade|\n| Computer Science @ SDSU |"
-    },   
+      bio: "| Advanced to final round interviews for Software Engineering Intern @ Amazon & AT&T |\n| Developing software projects in Java, Python, C++, and web technologies for over half a decade|\n| Computer Science @ SDSU |"
+    },    
     { 
       name: "Parsa Sedighi",
       role: "Co-Founder & Co-President",
