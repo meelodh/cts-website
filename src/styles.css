@@ -504,5 +504,39 @@ a {
   }
 }
 
+.sponsors-alumni-layout {
+  display: grid;
+  gap: 34px;
+}
+
+.sponsors-alumni-block {
+  display: grid;
+  gap: 18px;
+}
+
+.sponsors-contact-box {
+  margin-top: 42px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  padding: 36px;
+  text-align: center;
+}
+
+.sponsors-contact-box h2 {
+  margin: 0 0 14px;
+  font-size: 36px;
+}
+
+.sponsors-contact-box p {
+  max-width: 800px;
+  margin: 0 auto 22px;
+  color: #b7c2d8;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+
 
 

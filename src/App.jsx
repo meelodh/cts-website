@@ -4,6 +4,8 @@ import Events from "./pages/Events";
 import Projects from "./pages/Projects";
 import Join from "./pages/Join";
 import ExecBoard from "./pages/ExecBoard";
+import SponsorsAlumni from "./pages/SponsorsAlumni";
+
 
 
 
@@ -26,6 +28,7 @@ function App() {
             <NavLink to="/projects" className="nav-link">Projects</NavLink>
             <NavLink to="/join" className="nav-link">Join</NavLink>
             <NavLink to="/exec-board" className="nav-link">Exec Board</NavLink>
+            <NavLink to="/sponsors-alumni" className="nav-link">Sponsors & Alumni</NavLink>
           </nav>
         </div>
       </header>
@@ -37,6 +40,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/join" element={<Join />} />
           <Route path="/exec-board" element={<ExecBoard />} />
+          <Route path="/sponsors-alumni" element={<SponsorsAlumni />} /> 
         </Routes>
       </main>
     </div>
