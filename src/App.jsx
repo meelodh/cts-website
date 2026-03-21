@@ -31,7 +31,7 @@ function App() {
             <NavLink to="/sponsors-alumni" className="nav-link">Sponsors & Alumni</NavLink>
           </nav>
         </div>
-      </header>
+      </header> 
 
       <main>
         <Routes>
