@@ -32,7 +32,7 @@ function ExecBoard() {
       image: "/elijah.jpg",
       bio: "Student leader focused on communication, organization, and helping build a strong member experience within CTS."
     },
-    {
+    { 
       name: "",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
