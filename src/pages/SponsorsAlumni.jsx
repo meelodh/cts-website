@@ -3,35 +3,43 @@ function SponsorsAlumni() {
     {
       name: "Melad Safdari",
       role: "Software Engineer @ Amazon",
+      school: "UCLA Alumni",
       image: "/melad.jpg",
+      companyLogo: "/amazon.png",
       text: "Supporting CTS through mentorship, career insight, and industry experience.",
       isAlumni: false,
     },
     {
       name: "Jacob Khaliqi",
       role: "Software Engineer @ IBM",
+      school: "UCSD Alumni",
       image: "/jacob.jpg",
+      companyLogo: "/ibm.png",
       text: "Helping guide students interested in software engineering and career growth.",
       isAlumni: false,
     },
     {
       name: "Rustam Khoshal",
       role: "ERP Systems Engineer @ Hunter",
+      school: "SDSU Alumni",
       image: "/rustam.jpg",
+      companyLogo: "/hunter.png",
       text: "Supporting the growth of students in software and technology.",
       isAlumni: true,
     },
     {
       name: "Samir Kasem",
       role: "Senior Finance Specialist @ ASML",
+      school: "SDSU Alumni",
       image: "/samir.jpg",
+      companyLogo: "/asml.png",
       text: "Committed to helping students gain access to technical opportunities.",
       isAlumni: true,
     },
   ];
 
-  const regularSponsors = sponsors.filter((person) => !person.isAlumni);
-  const alumniSponsors = sponsors.filter((person) => person.isAlumni);
+  const regularSponsors = sponsors.filter((p) => !p.isAlumni);
+  const alumniSponsors = sponsors.filter((p) => p.isAlumni);
 
   return (
     <section className="page exec-page">
@@ -61,8 +69,17 @@ function SponsorsAlumni() {
                 className="exec-member-image"
               />
               <h2 className="exec-member-name">{person.name}</h2>
-              <p className="exec-member-role">{person.role}</p>
-              <p className="exec-member-year">Sponsor</p>
+
+              <div className="exec-role-row">
+                <p className="exec-member-role">{person.role}</p>
+                <img
+                  src={person.companyLogo}
+                  alt={`${person.name} company logo`}
+                  className="company-logo"
+                />
+              </div>
+
+              <p className="exec-member-year">Sponsor • {person.school}</p>
               <div className="exec-member-line"></div>
               <p className="exec-member-bio">{person.text}</p>
             </div>
@@ -85,8 +102,17 @@ function SponsorsAlumni() {
                 className="exec-member-image"
               />
               <h2 className="exec-member-name">{person.name}</h2>
-              <p className="exec-member-role">{person.role}</p>
-              <p className="exec-member-year">Sponsor • Alumni</p>
+
+              <div className="exec-role-row">
+                <p className="exec-member-role">{person.role}</p>
+                <img
+                  src={person.companyLogo}
+                  alt={`${person.name} company logo`}
+                  className="company-logo"
+                />
+              </div>
+
+              <p className="exec-member-year">Sponsor • {person.school}</p>
               <div className="exec-member-line"></div>
               <p className="exec-member-bio">{person.text}</p>
             </div>
