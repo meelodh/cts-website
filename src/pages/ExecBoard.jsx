@@ -6,15 +6,15 @@ function ExecBoard() {
       year: "Class of 2027",
       email: "mhassan2075@sdsu.edu",
       image: "/meelodd.jpg",
-      bio: "Computer Science student focused on building a strong technology community centered around software, innovation, and student growth."
-    }, 
-    {
+      bio: "| Advanced to final round (onsite) interviews for Software Engineering Intern @ Amazon & AT&T |\n| Developing software projects in Java, Python, C++, and web technologies for over half a decade|\n| Computer Science @ SDSU |"
+    },   
+    { 
       name: "Parsa Sedighi",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
       image: "/parsa.jpg",
-      bio: "| Incoming SI&T Intern @ Qualcomm |\n| Robotics @ Team Inspiration |\n| Computer Science @ SDSU | "
+      bio: "| Incoming SI&T Intern @ Qualcomm |\n| Robotics @ Team Inspiration |\n| Computer Science @ SDSU |"
     }, 
     {
       name: "Pleiades Leonis",
@@ -22,16 +22,16 @@ function ExecBoard() {
       year: "Class of 2027",
       email: "",
       image: "/pleoais.jpg",
-      bio: "Computer Science student committed to innovation, collaboration, and helping grow CTS into a high-impact campus organization."
-    },
+      bio: "| Advanced to final interview round for Software Engineering Intern @ Roblox |\n| Computer Science @ SDSU |"
+    }, 
     {
       name: "Elijah Padilla",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
       image: "/elijah.jpg",
-      bio: "Student leader focused on communication, organization, and helping build a strong member experience within CTS."
-    },
+      bio: "Advanced to final interview round for Software Engineering Intern @ T-Moblie |\n| Computer Science @ SDSU |"
+    }, 
     { 
       name: "",
       role: "Co-Founder & Co-President",
