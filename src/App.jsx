@@ -9,15 +9,36 @@ function App() {
         padding: "40px",
       }}
     >
-      <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>
-        The Computer Technology Society @ SDSU
-      </h1>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "16px",
+          marginBottom: "30px",
+        }}
+      >
+        <img
+          src="/logo.png"
+          alt="CTS Logo"
+          style={{
+            height: "70px",
+            width: "70px",
+            objectFit: "contain",
+            borderRadius: "10px",
+          }}
+        />
 
-      <p style={{ color: "#94a3b8", marginBottom: "30px" }}>
-        Co-Founder & Co-President: Meelod Hassan
-        <br />
-        mhassan2075@sdsu.edu
-      </p>
+        <div>
+          <h1 style={{ fontSize: "42px", margin: 0 }}>
+            The Computer Technology Society @ SDSU
+          </h1>
+          <p style={{ color: "#94a3b8", margin: "8px 0 0 0" }}>
+            Co-Founder &amp; Co-President: Meelod Hassan
+            <br />
+            mhassan2075@sdsu.edu
+          </p>
+        </div>
+      </div>
 
       <h2 style={{ fontSize: "28px", marginBottom: "10px" }}>What We Do</h2>
 
@@ -52,5 +73,4 @@ function App() {
   );
 }
 
-export default App;
-
+export default App; 
