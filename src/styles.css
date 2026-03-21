@@ -3,7 +3,7 @@
 }
 
 html,
-body,
+body,  
 #root {
   margin: 0;
   padding: 0;
@@ -305,7 +305,10 @@ img {
 .person-card {
   overflow: hidden;
   padding: 0;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .person-card:hover {
@@ -549,6 +552,42 @@ img {
   line-height: 1.5;
 }
 
+/* SPONSOR LOGO ROW */
+.exec-role-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.company-logo-wrap {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.exec-member-card:hover .company-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.08);
+}
+
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .exec-grid {
@@ -641,6 +680,11 @@ img {
 
   .person-image-wrap {
     height: 220px;
+  }
+
+  .company-logo-wrap {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -827,23 +871,31 @@ img {
   .sponsors-member-bio {
     font-size: 17px;
   }
+} 
+/* CLICKABLE SPONSOR CARDS */
+.sponsor-link-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.exec-role-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 6px;
-  flex-wrap: wrap;
+.sponsor-link-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 }
 
-.company-logo {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
+/* LinkedIn label */
+.sponsor-card-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #17336d;
+  transition: opacity 0.2s ease;
 }
 
-
-
+.sponsor-link-card:hover .sponsor-card-link {
+  opacity: 0.8;
+}
 
