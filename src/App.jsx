@@ -6,9 +6,6 @@ import Join from "./pages/Join";
 import ExecBoard from "./pages/ExecBoard";
 import SponsorsAlumni from "./pages/SponsorsAlumni";
 
-
-
-
 function App() {
   return (
     <div className="site-shell">
@@ -18,20 +15,69 @@ function App() {
             <img src="/logo.png" alt="CTS Logo" className="brand-logo" />
             <div>
               <div className="brand-title">CTS</div>
-              <div className="brand-subtitle">Computer Technology Society @ SDSU</div>
+              <div className="brand-subtitle">
+                Computer Technology Society @ SDSU
+              </div>
             </div>
           </NavLink>
 
           <nav className="nav-links">
-            <NavLink to="/" className="nav-link">Home</NavLink>
-            <NavLink to="/events" className="nav-link">Events</NavLink>
-            <NavLink to="/projects" className="nav-link">Projects</NavLink>
-            <NavLink to="/join" className="nav-link">Join</NavLink>
-            <NavLink to="/exec-board" className="nav-link">Exec Board</NavLink>
-            <NavLink to="/sponsors-alumni" className="nav-link">Sponsors & Alumni</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/events"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Events
+            </NavLink>
+
+            <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Projects
+            </NavLink>
+
+            <NavLink
+              to="/join"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Join
+            </NavLink>
+
+            <NavLink
+              to="/exec-board"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Exec Board
+            </NavLink>
+
+            <NavLink
+              to="/sponsors-alumni"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Sponsors & Alumni
+            </NavLink>
           </nav>
         </div>
-      </header> 
+      </header>
 
       <main>
         <Routes>
@@ -40,11 +86,11 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/join" element={<Join />} />
           <Route path="/exec-board" element={<ExecBoard />} />
-          <Route path="/sponsors-alumni" element={<SponsorsAlumni />} /> 
+          <Route path="/sponsors-alumni" element={<SponsorsAlumni />} />
         </Routes>
       </main>
     </div>
-  ); 
+  );
 }
 
 export default App;
