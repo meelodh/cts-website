@@ -5,31 +5,31 @@ function ExecBoard() {
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "mhassan2075@sdsu.edu",
-      image: "/",
+      image: "/meelodd.jpg",
       bio: "Computer Science student focused on building a strong technology community centered around software, innovation, and student growth."
-    },
+    }, 
     {
-      name: "",
+      name: "Parsa Sedighi",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
-      image: "/",
+      image: "/parsa.jpg",
       bio: "Computer Science major with a passion for technology, leadership, and building a strong student organization at SDSU."
     },
     {
-      name: "",
+      name: "Pleiades Leonis",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
-      image: "/",
+      image: "/pleoais.jpg",
       bio: "Computer Science student committed to innovation, collaboration, and helping grow CTS into a high-impact campus organization."
     },
     {
-      name: "",
+      name: "Elijah Padilla",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
-      image: "/",
+      image: "/elijah.jpg",
       bio: "Student leader focused on communication, organization, and helping build a strong member experience within CTS."
     },
     {
