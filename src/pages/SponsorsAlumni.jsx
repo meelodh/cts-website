@@ -5,7 +5,7 @@ function SponsorsAlumni() {
       role: "Software Engineer @ Amazon",
       school: "UCLA Alumni",
       image: "/melad.jpg",
-      companyLogo: "/amazon.png",
+      companyLogo: "/amazon.jpg",
       text: "Supporting CTS through mentorship, career insight, and industry experience.",
       isAlumni: false,
     },
@@ -14,7 +14,7 @@ function SponsorsAlumni() {
       role: "Software Engineer @ IBM",
       school: "UCSD Alumni",
       image: "/jacob.jpg",
-      companyLogo: "/ibm.png",
+      companyLogo: "/ibm.jpg",
       text: "Helping guide students interested in software engineering and career growth.",
       isAlumni: false,
     },
@@ -23,7 +23,7 @@ function SponsorsAlumni() {
       role: "ERP Systems Engineer @ Hunter",
       school: "SDSU Alumni",
       image: "/rustam.jpg",
-      companyLogo: "/hunter.png",
+      companyLogo: "/hunter.jpg",
       text: "Supporting the growth of students in software and technology.",
       isAlumni: true,
     },
@@ -32,7 +32,7 @@ function SponsorsAlumni() {
       role: "Senior Finance Specialist @ ASML",
       school: "SDSU Alumni",
       image: "/samir.jpg",
-      companyLogo: "/asml.png",
+      companyLogo: "/asml.jpg",
       text: "Committed to helping students gain access to technical opportunities.",
       isAlumni: true,
     },
@@ -54,6 +54,7 @@ function SponsorsAlumni() {
         <div className="exec-divider"></div>
       </div>
 
+      {/* Sponsors */}
       <section>
         <div className="exec-section-title-wrap">
           <h2 className="exec-section-title">Sponsors</h2>
@@ -74,12 +75,15 @@ function SponsorsAlumni() {
                 <p className="exec-member-role">{person.role}</p>
                 <img
                   src={person.companyLogo}
-                  alt={`${person.name} company logo`}
+                  alt="company logo"
                   className="company-logo"
                 />
               </div>
 
-              <p className="exec-member-year">Sponsor • {person.school}</p>
+              <p className="exec-member-year">
+                Sponsor • {person.school}
+              </p>
+
               <div className="exec-member-line"></div>
               <p className="exec-member-bio">{person.text}</p>
             </div>
@@ -87,6 +91,7 @@ function SponsorsAlumni() {
         </div>
       </section>
 
+      {/* Sponsor Alumni */}
       <section>
         <div className="exec-section-title-wrap">
           <h2 className="exec-section-title">Sponsors (Alumni)</h2>
@@ -107,12 +112,15 @@ function SponsorsAlumni() {
                 <p className="exec-member-role">{person.role}</p>
                 <img
                   src={person.companyLogo}
-                  alt={`${person.name} company logo`}
+                  alt="company logo"
                   className="company-logo"
                 />
               </div>
 
-              <p className="exec-member-year">Sponsor • {person.school}</p>
+              <p className="exec-member-year">
+                Sponsor • {person.school}
+              </p>
+
               <div className="exec-member-line"></div>
               <p className="exec-member-bio">{person.text}</p>
             </div>
@@ -120,6 +128,7 @@ function SponsorsAlumni() {
         </div>
       </section>
 
+      {/* Future Partnerships */}
       <section>
         <div className="exec-section-title-wrap">
           <h2 className="exec-section-title">Future Partnerships</h2>
@@ -147,6 +156,7 @@ function SponsorsAlumni() {
         </div>
       </section>
 
+      {/* Alumni Section */}
       <section style={{ marginTop: "56px" }}>
         <div className="exec-section-title-wrap">
           <h2 className="exec-section-title">Alumni Network</h2>
@@ -174,6 +184,7 @@ function SponsorsAlumni() {
         </div>
       </section>
 
+      {/* CTA */}
       <div className="exec-contact-box" style={{ marginTop: "56px" }}>
         <h2>Join as a Sponsor</h2>
         <p>
@@ -181,6 +192,7 @@ function SponsorsAlumni() {
           want to support students through guidance, collaboration, speaking
           opportunities, and community-building.
         </p>
+
         <div style={{ marginTop: "24px" }}>
           <a
             className="btn btn-gold"
