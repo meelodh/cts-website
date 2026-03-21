@@ -14,7 +14,7 @@ function ExecBoard() {
       year: "Class of 2027",
       email: "",
       image: "/parsa.jpg",
-      bio: "Computer Science major with a passion for technology, leadership, and building a strong student organization at SDSU."
+      bio: " | Incoming SI&T Intern @ Qualcomm | \n | Robotics @ Team Inspiration | \n Computer Science @ SDSU "
     },
     {
       name: "Pleiades Leonis",
