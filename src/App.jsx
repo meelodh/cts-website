@@ -7,7 +7,7 @@ import SponsorsAlumni from "./pages/SponsorsAlumni";
 import Events from "./pages/Events";
 import Join from "./pages/Join";
 import LinkedInPrep from "./pages/LinkedInPrep";
-import LeetCodePrep from "./pages/LeetodePrep"; 
+import LeetCodePrep from "./pages/LeetCodePrep"; 
 import Projects from "./pages/Projects";
 
 function App() {

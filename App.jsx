@@ -7,7 +7,7 @@ import SponsorsAlumni from "./pages/SponsorsAlumni";
 import Events from "./pages/Events";
 import Join from "./pages/Join";
 import LinkedInPrep from "./pages/LinkedInPrep";
-import LeetCodePrep from "./pages/LeetodePrep"; 
+import LeetCodePrep from "./pages/LeetCodePrep";
 import Projects from "./pages/Projects";
 
 function App() {
@@ -20,19 +20,18 @@ function App() {
               CTS @ SDSU
             </Link>
 
-           
-             <nav className="site-nav">
+            <nav className="site-nav">
               <Link to="/">Home</Link>
-             <Link to="/projects">Projects</Link>
-             <Link to="/events">Events</Link>
-             <Link to="/linkedin-prep">LinkedIn Prep</Link>
-             <Link to="/leetcode-prep">LeetCode Prep</Link>
-             <Link to="/exec-board">Exec Board</Link>
-               <Link to="/sponsors-alumni">Alumni & Sponsors</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/events">Events</Link>
+              <Link to="/linkedin-prep">LinkedIn Prep</Link>
+              <Link to="/leetcode-prep">LeetCode Prep</Link>
+              <Link to="/exec-board">Exec Board</Link>
+              <Link to="/sponsors-alumni">Alumni & Sponsors</Link>
               <Link to="/join" className="nav-cta">
-                 Join
+                Join
               </Link>
-                </nav>
+            </nav>
           </div>
         </header>
 
@@ -54,4 +53,5 @@ function App() {
 }
 
 export default App;
+
 
