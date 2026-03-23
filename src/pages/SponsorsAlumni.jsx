@@ -1,3 +1,5 @@
+import React from "react";
+
 function SponsorsAlumni() {
   const sponsors = [
     {
@@ -50,93 +52,88 @@ function SponsorsAlumni() {
   const alumniSponsors = sponsors.filter((p) => p.isAlumni);
 
   const SponsorCard = ({ person }) => (
-    <a
-      href={person.linkedin}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="exec-member-card sponsor-link-card"
-    >
-      <img
-        src={person.image}
-        alt={person.name}
-        className="exec-member-image"
-      />
+    <div className="sponsor-member-card">
+      <div className="sponsor-member-image-wrap">
+        <img
+          src={person.image}
+          alt={person.name}
+          className="sponsor-member-image"
+        />
+      </div>
 
-      <h2 className="exec-member-name">{person.name}</h2>
+      <h3 className="sponsor-member-name">{person.name}</h3>
 
-      <div className="exec-role-row">
-        <p className="exec-member-role">{person.role}</p>
+      <div className="sponsor-role-row">
+        <p className="sponsor-member-role">{person.role}</p>
 
-        {/* COMPANY LOGO (clickable, but doesn't trigger card click) */}
         <a
           href={person.companyLink}
           target="_blank"
           rel="noopener noreferrer"
           className="company-logo-wrap"
-          onClick={(e) => e.stopPropagation()}
         >
           <img
             src={person.companyLogo}
-            alt="company logo"
+            alt={`${person.name} company logo`}
             className="company-logo"
           />
         </a>
       </div>
 
-      <p className="exec-member-year">
-        Sponsor • {person.school}
-      </p>
+      <p className="sponsor-member-year">Sponsor • {person.school}</p>
 
-      <div className="exec-member-line"></div>
+      <div className="sponsor-member-line" />
 
-      <p className="exec-member-bio">{person.text}</p>
+      <p className="sponsor-member-bio">{person.text}</p>
 
-      <span className="sponsor-card-link">View LinkedIn</span>
-    </a>
+      <a
+        href={person.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="sponsor-card-link"
+      >
+        View LinkedIn
+      </a>
+    </div>
   );
 
   return (
-    <section className="page exec-page">
-      <div className="exec-header">
-        <h1 className="exec-main-title">Sponsors & Alumni</h1>
-        <p className="exec-main-text">
+    <section className="page-shell sponsors-page">
+      <div className="sponsors-hero">
+        <p className="sponsors-kicker">The Computer Technology Society @ SDSU</p>
+        <h1 className="sponsors-main-title">Sponsors & Alumni</h1>
+        <p className="sponsors-main-text">
           The Computer Technology Society is building a long-term community that
           connects students with sponsors, alumni, and professionals who support
           growth in software, technology, and innovation.
         </p>
-        <div className="exec-divider"></div>
       </div>
 
-      {/* Sponsors */}
-      <section>
-        <div className="exec-section-title-wrap">
-          <h2 className="exec-section-title">Sponsors</h2>
-          <div className="exec-divider small"></div>
+      <section className="sponsors-section">
+        <div className="sponsors-section-title-wrap">
+          <h2 className="sponsors-section-title">Sponsors</h2>
         </div>
 
-        <div className="exec-grid">
+        <div className="sponsors-grid">
           {regularSponsors.map((person) => (
             <SponsorCard key={person.name} person={person} />
           ))}
         </div>
       </section>
 
-      {/* Sponsors Alumni */}
-      <section>
-        <div className="exec-section-title-wrap">
-          <h2 className="exec-section-title">Sponsors (Alumni)</h2>
-          <div className="exec-divider small"></div>
+      <section className="sponsors-section">
+        <div className="sponsors-section-title-wrap">
+          <h2 className="sponsors-section-title">Sponsors (Alumni)</h2>
         </div>
 
-        <div className="exec-grid">
+        <div className="sponsors-grid">
           {alumniSponsors.map((person) => (
             <SponsorCard key={person.name} person={person} />
           ))}
         </div>
       </section>
 
-      {/* CTA */}
-      <div className="exec-contact-box" style={{ marginTop: "56px" }}>
+      <div className="sponsor-contact-box">
         <h2>Join as a Sponsor</h2>
         <p>
           CTS welcomes alumni, mentors, professionals, and organizations that
@@ -144,9 +141,9 @@ function SponsorsAlumni() {
           opportunities, and community-building.
         </p>
 
-        <div style={{ marginTop: "24px" }}>
+        <div className="sponsor-cta-wrap">
           <a
-            className="btn btn-gold"
+            className="cta-button"
             href="mailto:mhassan2075@sdsu.edu?subject=Interested in supporting CTS as a sponsor"
           >
             Become a Sponsor
@@ -158,4 +155,5 @@ function SponsorsAlumni() {
 }
 
 export default SponsorsAlumni;
+
 

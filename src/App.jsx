@@ -1,95 +1,55 @@
-import { Routes, Route, NavLink } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 import Home from "./pages/Home";
-import Events from "./pages/Events";
-import Projects from "./pages/Projects";
-import Join from "./pages/Join";
 import ExecBoard from "./pages/ExecBoard";
 import SponsorsAlumni from "./pages/SponsorsAlumni";
+import Events from "./pages/Events";
+import Join from "./pages/Join";
+import LinkedInPrep from "./pages/LinkedInPrep";
+import LeetCodePrep from "./pages/LeetCodePrep"; 
+import Projects from "./pages/Projects";
 
-function App() {
+function App() {  
   return (
-    <div className="site-shell">
-      <header className="navbar">
-        <div className="nav-inner">
-          <NavLink to="/" className="brand">
-            <img src="/logo.png" alt="CTS Logo" className="brand-logo" />
-            <div>
-              <div className="brand-title">CTS</div>
-              <div className="brand-subtitle">
-                Computer Technology Society @ SDSU
-              </div>
-            </div>
-          </NavLink>
+    <Router>
+      <div className="app-shell">
+        <header className="site-header">
+          <div className="site-header-inner">
+            <Link to="/" className="site-logo">
+              CTS @ SDSU
+            </Link>
 
-          <nav className="nav-links">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Home
-            </NavLink>
+           
+             <nav className="site-nav">
+              <Link to="/">Home</Link>
+             <Link to="/projects">Projects</Link>
+             <Link to="/events">Events</Link>
+             <Link to="/linkedin-prep">LinkedIn Prep</Link>
+             <Link to="/leetcode-prep">LeetCode Prep</Link>
+             <Link to="/exec-board">Exec Board</Link>
+               <Link to="/sponsors-alumni">Alumni & Sponsors</Link>
+              <Link to="/join" className="nav-cta">
+                 Join
+              </Link>
+                </nav>
+          </div>
+        </header>
 
-            <NavLink
-              to="/events"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Events
-            </NavLink>
-
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Projects
-            </NavLink>
-
-            <NavLink
-              to="/join"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Join
-            </NavLink>
-
-            <NavLink
-              to="/exec-board"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Exec Board
-            </NavLink>
-
-            <NavLink
-              to="/sponsors-alumni"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Sponsors & Alumni
-            </NavLink>
-          </nav>
-        </div>
-      </header>
-
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/join" element={<Join />} />
-          <Route path="/exec-board" element={<ExecBoard />} />
-          <Route path="/sponsors-alumni" element={<SponsorsAlumni />} />
-        </Routes>
-      </main>
-    </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/exec-board" element={<ExecBoard />} />
+            <Route path="/sponsors-alumni" element={<SponsorsAlumni />} />
+            <Route path="/linkedin-prep" element={<LinkedInPrep />} />
+            <Route path="/leetcode-prep" element={<LeetCodePrep />} />
+            <Route path="/join" element={<Join />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

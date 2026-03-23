@@ -1,3 +1,5 @@
+import React from "react";
+
 function ExecBoard() {
   const executiveMembers = [
     {
@@ -6,84 +8,99 @@ function ExecBoard() {
       year: "Class of 2027",
       email: "mhassan2075@sdsu.edu",
       image: "/meelodd.jpg",
-      bio: "| Advanced to final round interviews for Software Engineering Intern @ Amazon & AT&T |\n| Computer Science @ SDSU |"
-    },   
-    { 
+      bio: [
+        "Advanced to final round interviews for Software Engineering Intern @ Amazon & AT&T",
+        "Computer Science @ SDSU",
+      ],
+    },
+    {
       name: "Parsa Sedighi",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
       image: "/parsa.jpg",
-      bio: "| Incoming SI&T Intern @ Qualcomm |\n| Robotics @ Team Inspiration |\n| Computer Science @ SDSU |"
-    }, 
+      bio: [
+        "Incoming SI&T Intern @ Qualcomm",
+        "Robotics @ Team Inspiration",
+        "Computer Science @ SDSU",
+      ],
+    },
     {
       name: "Pleiades Leonis",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
       image: "/pleoais.jpg",
-      bio: "| Advanced to final interview round for Software Engineering Intern @ Roblox |\n| Computer Science @ SDSU |"
-    }, 
+      bio: [
+        "Advanced to final interview round for Software Engineering Intern @ Roblox",
+        "Computer Science @ SDSU",
+      ],
+    },
     {
       name: "Elijah Padilla",
       role: "Co-Founder & Co-President",
       year: "Class of 2027",
       email: "",
       image: "/elijah.jpg",
-      bio: "Advanced to final interview round for Software Engineering Intern @ T-Moblie |\n| Computer Science @ SDSU |"
-    }, 
-    { 
-      name: "",
-      role: "Co-Founder & Co-President",
-      year: "Class of 2027",
-      email: "",
-      image: "/",
-      bio: ""
-    }
+      bio: [
+        "Advanced to final interview round for Software Engineering Intern @ T-Mobile",
+        "Computer Science @ SDSU",
+      ],
+    },
   ];
-  
 
   return (
-    <section className="page exec-page">
-      <div className="exec-header">
+    <section className="page-shell exec-page">
+      <div className="exec-hero">
+        <p className="exec-kicker">The Computer Technology Society @ SDSU</p>
         <h1 className="exec-main-title">Executive Board</h1>
         <p className="exec-main-text">
-          Meet the founding leadership team of the Computer Technology Society at SDSU.
+          Meet the founding leadership team behind the Computer Technology
+          Society at SDSU. Our executive board is focused on building a strong
+          community around software engineering, technical growth, and career
+          development.
         </p>
-        <div className="exec-divider" />
       </div>
 
-      <div className="exec-section-title-wrap">
-        <h2 className="exec-section-title">Leadership Team</h2>
-        <div className="exec-divider small" />
-      </div>
+      <div className="exec-grid-section">
+        <div className="exec-grid">
+          {executiveMembers.map((member) => (
+            <div key={member.name} className="exec-member-card">
+              <div className="exec-member-image-wrap">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="exec-member-image"
+                />
+              </div>
 
-      <div className="exec-grid">
-        {executiveMembers.map((member) => (
-          <div key={member.name} className="exec-member-card">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="exec-member-image"
-            />
+              <h3 className="exec-member-name">{member.name}</h3>
+              <p className="exec-member-role">{member.role}</p>
+              <p className="exec-member-year">{member.year}</p>
 
-            <h3 className="exec-member-name">{member.name}</h3>
-            <p className="exec-member-role">{member.role}</p>
-            <p className="exec-member-year">{member.year}</p>
+              <div className="exec-member-line" />
 
-            <div className="exec-member-line" />
+              <div className="exec-member-bio">
+                {member.bio.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
+              </div>
 
-            <p className="exec-member-bio">{member.bio}</p>
-            <p className="exec-member-email">{member.email}</p>
-          </div>
-        ))}
+              {member.email && (
+                <a href={`mailto:${member.email}`} className="exec-member-email">
+                  {member.email}
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="exec-contact-box">
         <h2>Get in Touch</h2>
         <p>
-          Have questions or want to get involved? Reach out to any of our
-          executive board members using the contact information above.
+          Want to collaborate, join CTS, or learn more about the organization?
+          Reach out and connect with our executive team.
         </p>
       </div>
     </section>
@@ -91,5 +108,3 @@ function ExecBoard() {
 }
 
 export default ExecBoard;
-
-
