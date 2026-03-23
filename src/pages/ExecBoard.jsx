@@ -9,9 +9,9 @@ function ExecBoard() {
       email: "mhassan2075@sdsu.edu",
       image: "/meelodd.jpg",
       bio: [
-        "Advanced to final round interviews for Software Engineering Intern @ Amazon & AT&T",
+        "Advanced to final interview round for Software Engineering Intern @ Amazon & AT&T",
         "Computer Science @ SDSU",
-      ],
+      ], 
     },
     {
       name: "Parsa Sedighi",
