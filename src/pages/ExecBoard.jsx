@@ -38,9 +38,10 @@ function ExecBoard() {
       year: "Class of 2027",
       email: "",
       image: "/",
-      bio: "Finance student bringing leadership, strategy, and vision to help establish CTS as a standout student organization."
+      bio: ""
     }
   ];
+  
 
   return (
     <section className="page exec-page">
